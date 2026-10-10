@@ -77,6 +77,11 @@ export default function MerzougaPage() {
             <img src="/images/cars16.jpeg" alt="Hyundai Creta location Merzouga" className="w-full h-36 object-cover rounded-xl shadow" />
             <img src="/images/cars18.jpeg" alt="Duster automatique Merzouga" className="w-full h-36 object-cover rounded-xl shadow hidden md:block" />
           </div>
+          
+          <div className="bg-blue-50 border border-blue-100 rounded-xl p-5 my-8">
+            <p className="text-gray-700"><strong>Agence principale à Merzouga.</strong> C&apos;est notre point central. La prise en charge et la restitution se font à Merzouga sans frais de livraison supplémentaires liés à l&apos;aéroport.</p>
+          </div>
+
           <h2 className="text-2xl font-bold text-[var(--blue)] mt-12 mb-6">Véhicules recommandés pour Merzouga</h2>
           <div className="grid md:grid-cols-2 gap-4">
             {[

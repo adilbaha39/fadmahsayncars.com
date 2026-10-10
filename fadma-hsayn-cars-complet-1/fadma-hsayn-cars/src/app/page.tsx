@@ -68,7 +68,7 @@ export default function HomePage() {
             DÈS VOTRE ARRIVÉE
           </h1>
           <p className="text-[14px] text-gray-600 max-w-xs mb-6">
-            Location de voitures à Marrakech, Merzouga et Errachidia. Livraison aéroport, assurance incluse, kilométrage illimité.
+            Location à Merzouga, Marrakech et Errachidia. Livraison aéroport Marrakech 1 200 MAD, Errachidia 500 MAD. Assurance incluse, livraison selon ville, kilométrage illimité.
           </p>
           <div className="flex flex-wrap gap-3 mb-8">
             <Link href="/location-voiture-marrakech" className="text-sm bg-[var(--blue)] text-white px-4 py-2 rounded-lg hover:bg-[var(--dark)] transition">Marrakech</Link>
@@ -78,7 +78,7 @@ export default function HomePage() {
           </div>
           <div className="flex gap-6 flex-wrap">
             {[
-              { icon: "fa-plane-arrival", text: "Livraison à l'aéroport" },
+              { icon: "fa-plane-arrival", text: "Livraison sur place" },
               { icon: "fa-shield-halved", text: "Assurance incluse" },
               { icon: "fa-headset", text: "Support 24/7" },
             ].map((b, i) => (
@@ -172,12 +172,12 @@ export default function HomePage() {
           <h2 className="text-2xl md:text-3xl font-extrabold text-[var(--blue)] uppercase tracking-wide">— NOTRE FLOTTE —</h2>
           <p className="text-[13px] text-gray-500 mt-2">Une large sélection de véhicules adaptés à tous vos besoins</p>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {cars.map((car) => (
             <div key={car.id} className="bg-white rounded-xl p-4 shadow-md text-center hover:-translate-y-2 hover:shadow-xl transition duration-300 border-2 border-transparent hover:border-red-100">
               <Link href={`/vehicules/${car.slug}`}>
-                <img src={`/images/${car.image}`} alt={`Location ${car.fullName} Maroc`} className="w-full h-32 object-cover rounded-lg mb-3" />
-                <h3 className="text-[13px] font-bold uppercase tracking-wide mb-2 hover:text-[var(--red)]">{car.name}</h3>
+                <img src={`/images/${car.image}`} alt={`Location ${car.fullName} Maroc`} className="w-full h-52 object-cover rounded-lg mb-3" />
+                <h3 className="text-[15px] font-bold uppercase tracking-wide mb-2 hover:text-[var(--red)]">{car.name}</h3>
               </Link>
               <div className="flex justify-center gap-3 text-[11px] text-gray-500 mb-2">
                 <span className="flex items-center gap-1">
@@ -266,6 +266,64 @@ export default function HomePage() {
           ))}
         </div>
       </div>
+
+
+      {/* Avis Google */}
+      <section id="avis" className="py-16 px-4 md:px-10 bg-white">
+        <div className="text-center mb-10">
+          <h2 className="text-2xl md:text-3xl font-extrabold text-[var(--blue)] uppercase tracking-wide">— AVIS CLIENTS —</h2>
+          <p className="text-[13px] text-gray-500 mt-2">
+            <span className="text-yellow-500 text-lg">★★★★★</span>{" "}
+            <strong className="text-[var(--blue)]">5,0 / 5</strong> — 29 avis sur Google
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
+          {[
+            {
+              name: "Bouzaid Abdeljalil",
+              text: "Expérience outstanding. Personnel professionnel et chaleureux. Voiture propre et bien entretenue. Tarifs transparents, sans frais cachés.",
+            },
+            {
+              name: "ismail ouyahia",
+              text: "Very kind staff. Affordable price. Clean and brand new cars. Amazing views from Errachidia to Merzouga.",
+            },
+            {
+              name: "Madu Desertking",
+              text: "I recently rented a car from Fadma Hsayn Cars and I am extremely impressed with both the service and the vehicle.",
+            },
+            {
+              name: "moroccoessencetrip",
+              text: "I did rent car here thanks lot to the Owner. Amazing, very kind, new cars.",
+            },
+            {
+              name: "Ba Bafaga",
+              text: "Very nice cars, new and comfortable. Highly recommend to anyone planning to rent a car.",
+            },
+            {
+              name: "Hassan Mamali",
+              text: "No comment. Just great service. Thank you Mustafa.",
+            },
+          ].map((r, i) => (
+            <div key={i} className="bg-gray-50 rounded-2xl p-5 border border-gray-100 shadow-sm">
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-yellow-500 text-sm">★★★★★</span>
+              </div>
+              <p className="text-[13px] text-gray-600 leading-relaxed mb-3">&ldquo;{r.text}&rdquo;</p>
+              <p className="text-[12px] font-bold text-[var(--blue)]">— {r.name}</p>
+            </div>
+          ))}
+        </div>
+        <div className="text-center mt-10">
+          <a
+            href="https://maps.app.goo.gl/2LELrDsP27MXXt3K9"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-white border-2 border-[var(--blue)] text-[var(--blue)] font-bold px-6 py-3 rounded-lg hover:bg-[var(--blue)] hover:text-white transition text-sm"
+          >
+            <i className="fa-brands fa-google" /> Voir nos 29 avis sur Google
+          </a>
+        </div>
+      </section>
 
       {/* CTA */}
       <section className="py-16 px-4 md:px-10 bg-[var(--gray-light)]">

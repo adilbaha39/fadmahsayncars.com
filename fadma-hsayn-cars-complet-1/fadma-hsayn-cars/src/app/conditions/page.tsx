@@ -92,6 +92,15 @@ export default function ConditionsPage() {
             <h2 className="text-xl font-bold text-[var(--blue)] mb-3">8. Location aller simple</h2>
             <p>Possible entre Marrakech, Merzouga et Errachidia. Un supplément peut s&apos;appliquer pour le retour du véhicule. <Link href="/location-voiture-aller-simple" className="text-[var(--red)] font-semibold">Voir la page aller simple</Link>.</p>
           </div>
+          <div>
+            <h2 className="text-xl font-bold text-[var(--blue)] mb-3">9. Agence et frais de livraison</h2>
+            <ul className="list-disc list-inside space-y-2">
+              <li><strong>Agence principale :</strong> Merzouga (prise en charge et restitution sur place)</li>
+              <li><strong>Marrakech :</strong> livraison aéroport — <strong>1 200 MAD</strong></li>
+              <li><strong>Errachidia :</strong> livraison aéroport — <strong>500 MAD</strong></li>
+            </ul>
+          </div>
+
 
           <div className="p-6 bg-gray-50 rounded-2xl text-center">
             <p className="mb-4">Une question sur les conditions ?</p>

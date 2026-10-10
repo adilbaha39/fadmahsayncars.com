@@ -7,7 +7,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 export const metadata: Metadata = {
   title: "Location Voiture Aéroport Marrakech | Dès 300 MAD",
   description:
-    "Location de voiture à l'aéroport Marrakech Menara. Livraison à l'aéroport, assurance incluse, kilométrage illimité. Duster, Clio, Tucson dès 300 MAD/jour. Réservez via WhatsApp.",
+    "Location de voiture à l'aéroport Marrakech Menara. Service à Marrakech, assurance incluse, kilométrage illimité. Duster, Clio, Tucson dès 300 MAD/jour. Réservez via WhatsApp.",
   keywords: [
     "location voiture Marrakech",
     "location voiture aéroport Marrakech",
@@ -42,7 +42,7 @@ export default function MarrakechPage() {
               Location de voiture à l&apos;aéroport Marrakech Menara
             </h1>
             <p className="text-lg text-white/90 max-w-2xl mb-8">
-              Récupérez votre véhicule dès votre arrivée. Assurance incluse, kilométrage illimité, support 24/7. Dès 300 MAD/jour.
+              Livraison aéroport Marrakech : 1 200 MAD. Assurance incluse, kilométrage illimité. Dès 300 MAD/jour.
             </p>
             <a href="https://wa.me/212661371670?text=Bonjour%2C%20je%20souhaite%20louer%20une%20voiture%20%C3%A0%20Marrakech" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-[var(--red)] hover:bg-[#c01820] text-white font-bold px-8 py-4 rounded-lg transition">
               Réserver via WhatsApp <i className="fa-brands fa-whatsapp text-xl" />

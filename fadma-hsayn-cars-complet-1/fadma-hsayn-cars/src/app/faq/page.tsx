@@ -47,7 +47,7 @@ const faqs = [
   },
   {
     q: "Puis-je récupérer la voiture à l'aéroport ?",
-    a: "Oui. Nous proposons la prise en charge à l'aéroport Marrakech Menara et à l'aéroport d'Errachidia, ainsi qu'à notre agence de Merzouga.",
+    a: "Agence principale à Merzouga. Livraison aéroport Marrakech : 1 200 MAD. Livraison aéroport Errachidia : 500 MAD.",
   },
   {
     q: "Proposez-vous la location aller simple (one-way) ?",

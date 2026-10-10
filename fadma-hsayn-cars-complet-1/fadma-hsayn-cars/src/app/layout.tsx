@@ -94,9 +94,17 @@ export default function RootLayout({
                   url: "https://fadmahsayncars.com",
                   telephone: "+212661371670",
                   email: "fadmahsayncarrs@gmail.com",
+                  sameAs: ["https://maps.app.goo.gl/2LELrDsP27MXXt3K9"],
                   image: "https://fadmahsayncars.com/images/logo.png",
                   logo: "https://fadmahsayncars.com/images/logo.png",
                   priceRange: "300-600 MAD",
+                  aggregateRating: {
+                    "@type": "AggregateRating",
+                    ratingValue: "5.0",
+                    bestRating: "5",
+                    worstRating: "1",
+                    reviewCount: "29",
+                  },
                   currenciesAccepted: "MAD",
                   paymentAccepted: "Cash, Credit Card",
                   openingHoursSpecification: {

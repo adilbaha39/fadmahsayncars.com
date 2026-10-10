@@ -70,9 +70,9 @@ export default function ErrachidiaPage() {
             </p>
           </div>
 
-          <h2 className="text-2xl font-bold text-[var(--blue)] mt-12 mb-6">Avantages de la location à Errachidia</h2>
+          <h2 className="text-2xl font-bold text-[var(--blue)] mt-12 mb-6">Livraison à Errachidia</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-700">
-            <li>Prise en charge directe à l&apos;aéroport</li>
+            <li>Livraison à Errachidia hors terminal aéroport</li>
             <li>Possibilité d&apos;aller simple vers Merzouga ou Marrakech</li>
             <li>Véhicules adaptés aux routes du Sud (SUV recommandés)</li>
             <li>Assurance incluse et kilométrage illimité</li>
@@ -85,6 +85,14 @@ export default function ErrachidiaPage() {
             <strong> 400-450 MAD/jour</strong> pour un Duster, 
             et jusqu&apos;à <strong>600 MAD/jour</strong> pour un Tucson.
           </p>
+
+          
+          <h2 className="text-2xl font-bold text-[var(--blue)] mt-12 mb-6">Livraison à Errachidia</h2>
+          <div className="text-gray-700 space-y-3">
+            <p>Notre agence principale se trouve à <strong>Merzouga</strong>. Pour Errachidia, nous assurons la <strong>livraison aéroport</strong>.</p>
+            <p><strong>Livraison aéroport Errachidia : 500 MAD</strong>.</p>
+            <p>Idéal pour rejoindre Merzouga rapidement après votre vol.</p>
+          </div>
 
           <div className="mt-12 p-6 bg-[var(--blue)] text-white rounded-2xl text-center">
             <h3 className="text-xl font-bold mb-3">Réservez votre voiture à Errachidia</h3>
