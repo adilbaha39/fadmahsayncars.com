@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/faq`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/conditions`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/contact`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
+    { url: `${base}/blog`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
     { url: `${base}/blog/marrakech-merzouga`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/blog/errachidia-merzouga`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
   ];

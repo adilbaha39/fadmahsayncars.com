@@ -30,6 +30,7 @@ export default function Footer() {
             <li><Link href="/location-voiture-errachidia" className="hover:text-[var(--red)]">Errachidia</Link></li>
             <li><Link href="/faq" className="hover:text-[var(--red)]">FAQ</Link></li>
             <li><Link href="/conditions" className="hover:text-[var(--red)]">Conditions</Link></li>
+            <li><Link href="/blog" className="hover:text-[var(--red)]">Blog</Link></li>
             <li><Link href="/blog/marrakech-merzouga" className="hover:text-[var(--red)]">Road trip Merzouga</Link></li>
             <li><Link href="/blog/errachidia-merzouga" className="hover:text-[var(--red)]">Errachidia → Merzouga</Link></li>
             <li><Link href="/contact" className="hover:text-[var(--red)]">Contact</Link></li>

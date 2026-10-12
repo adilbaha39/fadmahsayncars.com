@@ -31,7 +31,9 @@ export default function Navbar() {
           <li><Link href="/location-voiture-errachidia" className="hover:text-[var(--red)] transition">Errachidia</Link></li>
           <li><Link href="/location-voiture-aller-simple" className="hover:text-[var(--red)] transition">Aller simple</Link></li>
           <li><Link href="/faq" className="hover:text-[var(--red)] transition">FAQ</Link></li>
+          <li><Link href="/blog" className="hover:text-[var(--red)] transition">Blog</Link></li>
           <li><Link href="/conditions" className="hover:text-[var(--red)] transition">Conditions</Link></li>
+          <li><Link href="/contact" className="hover:text-[var(--red)] transition">Contact</Link></li>
         </ul>
 
         <div className="flex items-center gap-3">
@@ -54,7 +56,9 @@ export default function Navbar() {
           <Link href="/location-voiture-errachidia" onClick={() => setMobileOpen(false)} className="py-3 px-4 rounded-lg text-[14px] font-medium hover:bg-gray-100">Errachidia</Link>
           <Link href="/location-voiture-aller-simple" onClick={() => setMobileOpen(false)} className="py-3 px-4 rounded-lg text-[14px] font-medium hover:bg-gray-100">Aller simple</Link>
           <Link href="/faq" onClick={() => setMobileOpen(false)} className="py-3 px-4 rounded-lg text-[14px] font-medium hover:bg-gray-100">FAQ</Link>
+          <Link href="/blog" onClick={() => setMobileOpen(false)} className="py-3 px-4 rounded-lg text-[14px] font-medium hover:bg-gray-100">Blog</Link>
           <Link href="/conditions" onClick={() => setMobileOpen(false)} className="py-3 px-4 rounded-lg text-[14px] font-medium hover:bg-gray-100">Conditions</Link>
+          <Link href="/contact" onClick={() => setMobileOpen(false)} className="py-3 px-4 rounded-lg text-[14px] font-medium hover:bg-gray-100">Contact</Link>
           <a href="tel:+212661371670" className="mt-2 py-3 text-center bg-gradient-to-r from-[var(--red)] to-[#c01820] text-white rounded-lg font-semibold">+212 6 61 37 16 70</a>
         </div>
       )}
