@@ -19,14 +19,14 @@ export const metadata: Metadata = {
     title: "Location Voiture Aéroport Errachidia | Dès 300 MAD",
     description: "Louez une voiture à l'aéroport d'Errachidia pour rejoindre Merzouga.",
     url: "https://fadmahsayncars.com/location-voiture-errachidia",
-    images: ["/images/sora3.jpeg"],
+    images: ["/images/location-voiture-errachidia.webp"],
   },
 };
 
 export default function ErrachidiaPage() {
   return (
     <>
-      <Navbar />
+      <Navbar locale="fr" />
       <main className="mt-[70px]">
         <section className="bg-gradient-to-r from-[var(--blue)] to-[#0d1a3a] text-white py-16 px-4 md:px-10">
           <div className="max-w-4xl mx-auto">
@@ -55,7 +55,7 @@ export default function ErrachidiaPage() {
 
         <section className="py-16 px-4 md:px-10 max-w-4xl mx-auto">
           <div className="mb-8">
-            <img src="/images/sora3.jpeg" alt="Aéroport Errachidia location de voiture" className="w-full h-64 md:h-80 object-cover rounded-2xl shadow-lg" />
+            <img src="/images/location-voiture-errachidia.webp" alt="Aéroport Errachidia location de voiture" className="w-full h-64 md:h-80 object-cover rounded-2xl shadow-lg" />
           </div>
           <h2 className="text-2xl font-bold text-[var(--blue)] mb-6">Aéroport Errachidia → Merzouga en voiture</h2>
           <div className="space-y-4 text-gray-700">
@@ -116,7 +116,7 @@ export default function ErrachidiaPage() {
           </div>
         </section>
       </main>
-      <Footer />
+      <Footer locale="fr" />
       <a href="https://wa.me/212661371670" target="_blank" rel="noopener noreferrer" className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition text-2xl">
         <i className="fa-brands fa-whatsapp" />
       </a>

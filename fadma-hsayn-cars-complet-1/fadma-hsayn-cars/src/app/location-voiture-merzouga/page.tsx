@@ -20,14 +20,14 @@ export const metadata: Metadata = {
     title: "Location Voiture Merzouga | SUV & 4x4 Désert",
     description: "Location SUV et 4x4 à Merzouga. Kilométrage illimité, assurance incluse.",
     url: "https://fadmahsayncars.com/location-voiture-merzouga",
-    images: ["/images/sora4.jpeg"],
+    images: ["/images/location-voiture-merzouga-desert.webp"],
   },
 };
 
 export default function MerzougaPage() {
   return (
     <>
-      <Navbar />
+      <Navbar locale="fr" />
       <main className="mt-[70px]">
         <section className="bg-gradient-to-r from-[var(--blue)] to-[#0d1a3a] text-white py-16 px-4 md:px-10">
           <div className="max-w-4xl mx-auto">
@@ -56,7 +56,7 @@ export default function MerzougaPage() {
 
         <section className="py-16 px-4 md:px-10 max-w-4xl mx-auto">
           <div className="mb-8">
-            <img src="/images/sora4.jpeg" alt="Location voiture Merzouga désert Erg Chebbi" className="w-full h-64 md:h-80 object-cover rounded-2xl shadow-lg" />
+            <img src="/images/location-voiture-merzouga-desert.webp" alt="Location voiture Merzouga désert Erg Chebbi" className="w-full h-64 md:h-80 object-cover rounded-2xl shadow-lg" />
           </div>
           <h2 className="text-2xl font-bold text-[var(--blue)] mb-6">Louer une voiture à Merzouga pour explorer le désert</h2>
           <div className="space-y-4 text-gray-700">
@@ -73,9 +73,9 @@ export default function MerzougaPage() {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 my-8">
-            <img src="/images/cars1.jpeg" alt="Dacia Duster location Merzouga" className="w-full h-36 object-cover rounded-xl shadow" />
-            <img src="/images/cars16.jpeg" alt="Hyundai Creta location Merzouga" className="w-full h-36 object-cover rounded-xl shadow" />
-            <img src="/images/cars18.jpeg" alt="Duster automatique Merzouga" className="w-full h-36 object-cover rounded-xl shadow hidden md:block" />
+            <img src="/images/location-dacia-duster-marrakech.webp" alt="Dacia Duster location Merzouga" className="w-full h-36 object-cover rounded-xl shadow" />
+            <img src="/images/location-hyundai-creta-marrakech.webp" alt="Hyundai Creta location Merzouga" className="w-full h-36 object-cover rounded-xl shadow" />
+            <img src="/images/location-dacia-duster-automatique.webp" alt="Duster automatique Merzouga" className="w-full h-36 object-cover rounded-xl shadow hidden md:block" />
           </div>
           
           <div className="bg-blue-50 border border-blue-100 rounded-xl p-5 my-8">
@@ -143,7 +143,7 @@ export default function MerzougaPage() {
           </div>
         </section>
       </main>
-      <Footer />
+      <Footer locale="fr" />
       <a href="https://wa.me/212661371670" target="_blank" rel="noopener noreferrer" className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition text-2xl">
         <i className="fa-brands fa-whatsapp" />
       </a>

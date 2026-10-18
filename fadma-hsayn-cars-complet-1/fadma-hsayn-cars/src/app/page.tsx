@@ -55,11 +55,11 @@ export default function HomePage() {
 
   return (
     <>
-      <Navbar />
+      <Navbar locale="fr" />
 
       {/* Hero */}
       <section id="home" className="mt-[70px] relative min-h-[calc(100vh-70px)] max-h-[680px] overflow-hidden bg-[#e8eef5]">
-        <img src="/images/sora1.jpeg" alt="Location voiture aéroport Marrakech Menara" className="absolute inset-0 w-full h-full object-cover object-right" />
+        <img src="/images/location-voiture-aeroport-maroc.webp" alt="Location voiture aéroport Marrakech Menara" className="absolute inset-0 w-full h-full object-cover object-right" />
         <div className="absolute inset-0 bg-gradient-to-r from-white/97 via-white/80 to-transparent" />
         <div className="relative z-10 p-8 md:p-12 max-w-xl">
           <h1 className="text-4xl md:text-5xl font-extrabold text-[var(--blue)] leading-tight mb-4">
@@ -336,12 +336,12 @@ export default function HomePage() {
             </button>
           </div>
           <div className="hidden md:block">
-            <img src="/images/cars1.jpeg" alt="Location voiture Maroc" className="w-full max-w-sm float-car" />
+            <img src="/images/location-dacia-duster-marrakech.webp" alt="Location voiture Maroc" className="w-full max-w-sm float-car" />
           </div>
         </div>
       </section>
 
-      <Footer />
+      <Footer locale="fr" />
 
       <a
         href="https://wa.me/212661371670"

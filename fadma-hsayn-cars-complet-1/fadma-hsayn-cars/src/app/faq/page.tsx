@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: "FAQ - Location de voiture au Maroc",
     description: "Réponses sur la caution, l'assurance, le permis et la location à Marrakech, Merzouga et Errachidia.",
     url: "https://fadmahsayncars.com/faq",
-    images: ["/images/cars1.jpeg"],
+    images: ["/images/location-dacia-duster-marrakech.webp"],
   },
   twitter: {
     card: "summary_large_image",
@@ -91,7 +91,7 @@ export default function FAQPage() {
 
   return (
     <>
-      <Navbar />
+      <Navbar locale="fr" />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
@@ -113,7 +113,7 @@ export default function FAQPage() {
 
         <section className="py-16 px-4 md:px-10 max-w-3xl mx-auto">
           <div className="mb-10">
-            <img src="/images/cars1.jpeg" alt="FAQ location voiture Maroc Fadma Hsayn Cars" className="w-full h-48 object-cover rounded-2xl shadow" />
+            <img src="/images/location-dacia-duster-marrakech.webp" alt="FAQ location voiture Maroc Fadma Hsayn Cars" className="w-full h-48 object-cover rounded-2xl shadow" />
           </div>
           <div className="space-y-6">
             {faqs.map((faq, i) => (
@@ -138,7 +138,7 @@ export default function FAQPage() {
           </div>
         </section>
       </main>
-      <Footer />
+      <Footer locale="fr" />
       <a href="https://wa.me/212661371670" target="_blank" rel="noopener noreferrer" className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition text-2xl">
         <i className="fa-brands fa-whatsapp" />
       </a>

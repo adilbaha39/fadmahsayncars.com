@@ -1,30 +1,37 @@
 import { MetadataRoute } from "next";
 import { cars } from "@/data/cars";
+import { locales, defaultLocale, localizedPath } from "@/lib/i18n";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://fadmahsayncars.com";
   const now = new Date();
 
-  const staticPages: MetadataRoute.Sitemap = [
-    { url: base, lastModified: now, changeFrequency: "weekly", priority: 1 },
-    { url: `${base}/location-voiture-marrakech`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
-    { url: `${base}/location-voiture-merzouga`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
-    { url: `${base}/location-voiture-errachidia`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
-    { url: `${base}/location-voiture-aller-simple`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
-    { url: `${base}/faq`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/conditions`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/contact`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
-    { url: `${base}/blog`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
-    { url: `${base}/blog/marrakech-merzouga`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/blog/errachidia-merzouga`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+  const paths = [
+    "/",
+    "/location-voiture-marrakech",
+    "/location-voiture-merzouga",
+    "/location-voiture-errachidia",
+    "/location-voiture-aller-simple",
+    "/faq",
+    "/conditions",
+    "/contact",
+    "/blog",
+    "/blog/marrakech-merzouga",
+    "/blog/errachidia-merzouga",
+    ...cars.map((c) => `/vehicules/${c.slug}`),
   ];
 
-  const carPages: MetadataRoute.Sitemap = cars.map((car) => ({
-    url: `${base}/vehicules/${car.slug}`,
-    lastModified: now,
-    changeFrequency: "weekly" as const,
-    priority: 0.8,
-  }));
-
-  return [...staticPages, ...carPages];
+  const entries: MetadataRoute.Sitemap = [];
+  for (const path of paths) {
+    for (const locale of locales) {
+      const url = `${base}${localizedPath(path, locale)}`;
+      entries.push({
+        url,
+        lastModified: now,
+        changeFrequency: path === "/" ? "weekly" : "monthly",
+        priority: path === "/" ? 1 : path.startsWith("/location") ? 0.9 : 0.7,
+      });
+    }
+  }
+  return entries;
 }

@@ -43,7 +43,7 @@ export const metadata: Metadata = {
       "Location de voitures dans les aéroports de Marrakech, Merzouga et Errachidia. Assurance incluse, kilométrage illimité, support 24/7.",
     images: [
       {
-        url: "/images/sora1.jpeg",
+        url: "/images/location-voiture-aeroport-maroc.webp",
         width: 1200,
         height: 630,
         alt: "Fadma Hsayn Cars - Location de voitures au Maroc",
@@ -99,8 +99,8 @@ export default function RootLayout({
                   telephone: "+212661371670",
                   email: "fadmahsayncarrs@gmail.com",
                   sameAs: ["https://maps.app.goo.gl/2LELrDsP27MXXt3K9"],
-                  image: "https://fadmahsayncars.com/images/logo.png",
-                  logo: "https://fadmahsayncars.com/images/logo.png",
+                  image: "https://fadmahsayncars.com/images/logo-fadma-hsayn-cars.webp",
+                  logo: "https://fadmahsayncars.com/images/logo-fadma-hsayn-cars.webp",
                   priceRange: "300-600 MAD",
                   aggregateRating: {
                     "@type": "AggregateRating",
@@ -137,7 +137,7 @@ export default function RootLayout({
                   url: "https://fadmahsayncars.com",
                   logo: {
                     "@type": "ImageObject",
-                    url: "https://fadmahsayncars.com/images/logo.png",
+                    url: "https://fadmahsayncars.com/images/logo-fadma-hsayn-cars.webp",
                   },
                   contactPoint: {
                     "@type": "ContactPoint",

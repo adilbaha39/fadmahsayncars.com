@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: "Conditions de location | Caution & Assurance",
     description: "Caution 20 000 MAD, assurance incluse, kilométrage illimité, annulation gratuite 48h. Conditions claires.",
     url: "https://fadmahsayncars.com/conditions",
-    images: ["/images/cars1.jpeg"],
+    images: ["/images/location-dacia-duster-marrakech.webp"],
   },
   twitter: {
     card: "summary_large_image",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 export default function ConditionsPage() {
   return (
     <>
-      <Navbar />
+      <Navbar locale="fr" />
       <main className="mt-[70px]">
         <section className="bg-gradient-to-r from-[var(--blue)] to-[#0d1a3a] text-white py-16 px-4 md:px-10">
           <div className="max-w-4xl mx-auto">
@@ -110,7 +110,7 @@ export default function ConditionsPage() {
           </div>
         </section>
       </main>
-      <Footer />
+      <Footer locale="fr" />
       <a href="https://wa.me/212661371670" target="_blank" rel="noopener noreferrer" className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-lg text-2xl">
         <i className="fa-brands fa-whatsapp" />
       </a>

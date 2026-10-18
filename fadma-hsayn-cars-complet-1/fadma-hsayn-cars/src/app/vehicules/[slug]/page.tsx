@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { cars, getCarBySlug } from "@/data/cars";
+import { getCarDescription } from "@/data/cars-i18n";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
@@ -29,14 +30,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     openGraph: {
       title: `Location ${car.fullName}`,
-      description: car.description,
+      description: getCarDescription(car.slug, "fr") || car.description,
       url: `https://fadmahsayncars.com/vehicules/${car.slug}`,
       images: [`/images/${car.image}`],
     },
     twitter: {
       card: "summary_large_image",
       title: `Location ${car.fullName}`,
-      description: car.description,
+      description: getCarDescription(car.slug, "fr") || car.description,
     },
   };
 }
@@ -50,7 +51,7 @@ export default async function CarPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "Product",
     name: car.fullName,
-    description: car.description,
+    description: getCarDescription(car.slug, "fr") || car.description,
     image: `https://fadmahsayncars.com/images/${car.image}`,
     brand: { "@type": "Brand", name: car.fullName.split(" ")[0] },
     category: car.category,
@@ -70,7 +71,7 @@ export default async function CarPage({ params }: Props) {
 
   return (
     <>
-      <Navbar />
+      <Navbar locale="fr" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <main className="mt-[70px]">
         <section className="bg-gradient-to-r from-[var(--blue)] to-[#0d1a3a] text-white py-12 px-4 md:px-10">
@@ -103,7 +104,7 @@ export default async function CarPage({ params }: Props) {
             </div>
             <div>
               <h2 className="text-2xl font-bold text-[var(--blue)] mb-4">{car.fullName}</h2>
-              <p className="text-gray-700 mb-6">{car.description}</p>
+              <p className="text-gray-700 mb-6">{getCarDescription(car.slug, "fr") || car.description}</p>
 
               <div className="grid grid-cols-2 gap-4 mb-6">
                 <div className="bg-gray-50 p-4 rounded-xl">
@@ -170,7 +171,7 @@ export default async function CarPage({ params }: Props) {
           </div>
         </section>
       </main>
-      <Footer />
+      <Footer locale="fr" />
       <a href="https://wa.me/212661371670" target="_blank" rel="noopener noreferrer" className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition text-2xl">
         <i className="fa-brands fa-whatsapp" />
       </a>

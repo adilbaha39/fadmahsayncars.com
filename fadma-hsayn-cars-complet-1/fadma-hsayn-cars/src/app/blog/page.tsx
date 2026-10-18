@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: "Blog - Guides location voiture Maroc",
     description: "Itinéraires et conseils pour louer une voiture au Maroc.",
     url: "https://fadmahsayncars.com/blog",
-    images: ["/images/sora1.jpeg"],
+    images: ["/images/location-voiture-aeroport-maroc.webp"],
   },
 };
 
@@ -22,20 +22,20 @@ const posts = [
     href: "/blog/marrakech-merzouga",
     title: "Location voiture Marrakech-Merzouga : aller simple",
     desc: "Location aller simple Marrakech → Merzouga : itinéraire, choix du véhicule et conseils pour réserver.",
-    image: "/images/sora1.jpeg",
+    image: "/images/location-voiture-aeroport-maroc.webp",
   },
   {
     href: "/blog/errachidia-merzouga",
     title: "Location voiture Errachidia-Merzouga : aéroport et aller simple",
     desc: "Location depuis l'aéroport d'Errachidia vers Merzouga : trajet, aller simple et conseils pour réserver.",
-    image: "/images/sora3.jpeg",
+    image: "/images/location-voiture-errachidia.webp",
   },
 ];
 
 export default function BlogIndexPage() {
   return (
     <>
-      <Navbar />
+      <Navbar locale="fr" />
       <main className="mt-[70px]">
         <section className="bg-gradient-to-r from-[var(--blue)] to-[#0d1a3a] text-white py-16 px-4 md:px-10">
           <div className="max-w-4xl mx-auto">
@@ -69,7 +69,7 @@ export default function BlogIndexPage() {
           </div>
         </section>
       </main>
-      <Footer />
+      <Footer locale="fr" />
       <a href="https://wa.me/212661371670" target="_blank" rel="noopener noreferrer" className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-lg text-2xl">
         <i className="fa-brands fa-whatsapp" />
       </a>

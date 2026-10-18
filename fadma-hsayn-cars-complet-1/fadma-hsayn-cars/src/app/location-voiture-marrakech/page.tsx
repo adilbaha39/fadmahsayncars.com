@@ -21,14 +21,14 @@ export const metadata: Metadata = {
     title: "Location Voiture Aéroport Marrakech | Dès 300 MAD",
     description: "Louez une voiture à l'aéroport Marrakech Menara. Assurance incluse, kilométrage illimité.",
     url: "https://fadmahsayncars.com/location-voiture-marrakech",
-    images: ["/images/sora2.jpeg"],
+    images: ["/images/location-voiture-marrakech-jamaa-elfna.webp"],
   },
 };
 
 export default function MarrakechPage() {
   return (
     <>
-      <Navbar />
+      <Navbar locale="fr" />
       <main className="mt-[70px]">
         <section className="bg-gradient-to-r from-[var(--blue)] to-[#0d1a3a] text-white py-16 px-4 md:px-10">
           <div className="max-w-4xl mx-auto">
@@ -52,14 +52,14 @@ export default function MarrakechPage() {
 
         <section className="py-16 px-4 md:px-10 max-w-4xl mx-auto prose prose-lg text-gray-700">
           <div className="mb-8 not-prose">
-            <img src="/images/sora2.jpeg" alt="Aéroport Marrakech Menara - location de voiture" className="w-full h-64 md:h-80 object-cover rounded-2xl shadow-lg" />
+            <img src="/images/location-voiture-marrakech-jamaa-elfna.webp" alt="Aéroport Marrakech Menara - location de voiture" className="w-full h-64 md:h-80 object-cover rounded-2xl shadow-lg" />
           </div>
           <h2 className="text-2xl font-bold text-[var(--blue)]">Pourquoi louer une voiture à Marrakech ?</h2>
           <p>L&apos;aéroport Marrakech Menara est l&apos;une des principales portes d&apos;entrée du Maroc. Disposer d&apos;une voiture dès votre arrivée vous offre une liberté totale pour explorer la ville rouge, l&apos;Atlas, Essaouira ou partir vers Merzouga.</p>
           <p>Fadma Hsayn Cars propose une prise en charge rapide à l&apos;aéroport. Nos tarifs commencent à <strong>300 MAD/jour</strong>, assurance incluse, kilométrage illimité, annulation gratuite jusqu&apos;à 48h.</p>
           <div className="grid grid-cols-2 gap-4 my-8 not-prose">
-            <img src="/images/cars1.jpeg" alt="Location Dacia Duster Marrakech" className="w-full h-40 object-cover rounded-xl shadow" />
-            <img src="/images/cars20.jpeg" alt="Location Hyundai Tucson Marrakech" className="w-full h-40 object-cover rounded-xl shadow" />
+            <img src="/images/location-dacia-duster-marrakech.webp" alt="Location Dacia Duster Marrakech" className="w-full h-40 object-cover rounded-xl shadow" />
+            <img src="/images/location-hyundai-tucson-marrakech.webp" alt="Location Hyundai Tucson Marrakech" className="w-full h-40 object-cover rounded-xl shadow" />
           </div>
 
           <h2 className="text-2xl font-bold text-[var(--blue)] mt-10">Prise en charge à l&apos;aéroport</h2>
@@ -108,7 +108,7 @@ export default function MarrakechPage() {
           </div>
         </section>
       </main>
-      <Footer />
+      <Footer locale="fr" />
       <a href="https://wa.me/212661371670" target="_blank" rel="noopener noreferrer" className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-lg text-2xl">
         <i className="fa-brands fa-whatsapp" />
       </a>

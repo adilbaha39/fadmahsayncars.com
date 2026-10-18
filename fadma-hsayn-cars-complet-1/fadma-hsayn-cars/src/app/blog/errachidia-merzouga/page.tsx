@@ -26,14 +26,14 @@ export const metadata: Metadata = {
     description: DESCRIPTION,
     url: PAGE_URL,
     siteName: "Fadma Hsayn Cars",
-    images: ["/images/sora3.jpeg"],
+    images: ["/images/location-voiture-errachidia.webp"],
     locale: "fr_MA",
   },
   twitter: {
     card: "summary_large_image",
     title: TITLE,
     description: DESCRIPTION,
-    images: ["/images/sora3.jpeg"],
+    images: ["/images/location-voiture-errachidia.webp"],
   },
 };
 
@@ -68,14 +68,14 @@ const jsonLd = {
       "@id": `${PAGE_URL}#article`,
       headline: TITLE,
       description: DESCRIPTION,
-      image: "https://fadmahsayncars.com/images/sora3.jpeg",
+      image: "https://fadmahsayncars.com/images/location-voiture-errachidia.webp",
       author: { "@type": "Organization", name: "Fadma Hsayn Cars" },
       publisher: {
         "@type": "Organization",
         name: "Fadma Hsayn Cars",
         logo: {
           "@type": "ImageObject",
-          url: "https://fadmahsayncars.com/images/logo.png",
+          url: "https://fadmahsayncars.com/images/logo-fadma-hsayn-cars.webp",
         },
       },
       datePublished: "2026-10-08",
@@ -91,7 +91,7 @@ const jsonLd = {
       name: "Fadma Hsayn Cars",
       url: "https://fadmahsayncars.com",
       telephone: "+212661371670",
-      logo: "https://fadmahsayncars.com/images/logo.png",
+      logo: "https://fadmahsayncars.com/images/logo-fadma-hsayn-cars.webp",
       sameAs: ["https://maps.app.goo.gl/2LELrDsP27MXXt3K9"],
     },
     {
@@ -135,7 +135,7 @@ export default function BlogErrachidiaMerzouga() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <Navbar />
+      <Navbar locale="fr" />
       <main className="mt-[70px]">
         <section className="bg-gradient-to-r from-[var(--blue)] to-[#0d1a3a] text-white py-16 px-4 md:px-10">
           <div className="max-w-4xl mx-auto">
@@ -162,7 +162,7 @@ export default function BlogErrachidiaMerzouga() {
         <article className="py-16 px-4 md:px-10 max-w-3xl mx-auto text-gray-700 space-y-5 leading-relaxed">
           <div className="mb-8">
             <img
-              src="/images/sora3.jpeg"
+              src="/images/location-voiture-errachidia.webp"
               alt="Location voiture aéroport Errachidia Merzouga"
               className="w-full h-64 md:h-80 object-cover rounded-2xl shadow-lg"
             />
@@ -493,7 +493,7 @@ export default function BlogErrachidiaMerzouga() {
           </div>
         </article>
       </main>
-      <Footer />
+      <Footer locale="fr" />
       <a
         href="https://wa.me/212661371670?text=Bonjour%2C%20je%20souhaite%20une%20location%20voiture%20Errachidia%20Merzouga"
         target="_blank"

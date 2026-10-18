@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     title: "Location Voiture Aller Simple au Maroc",
     description: "Récupérez à Marrakech ou Errachidia, restituez à Merzouga. Location aller simple sans retour au point de départ.",
     url: "https://fadmahsayncars.com/location-voiture-aller-simple",
-    images: ["/images/sora2.jpeg"],
+    images: ["/images/location-voiture-marrakech-jamaa-elfna.webp"],
   },
   twitter: {
     card: "summary_large_image",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
 export default function OneWayPage() {
   return (
     <>
-      <Navbar />
+      <Navbar locale="fr" />
       <main className="mt-[70px]">
         <section className="bg-gradient-to-r from-[var(--blue)] to-[#0d1a3a] text-white py-16 px-4 md:px-10">
           <div className="max-w-4xl mx-auto">
@@ -65,7 +65,7 @@ export default function OneWayPage() {
 
         <section className="py-16 px-4 md:px-10 max-w-4xl mx-auto">
           <div className="mb-8">
-            <img src="/images/sora2.jpeg" alt="Location voiture aller simple Maroc Marrakech Merzouga" className="w-full h-64 object-cover rounded-2xl shadow-lg" />
+            <img src="/images/location-voiture-marrakech-jamaa-elfna.webp" alt="Location voiture aller simple Maroc Marrakech Merzouga" className="w-full h-64 object-cover rounded-2xl shadow-lg" />
           </div>
           <h2 className="text-2xl font-bold text-[var(--blue)] mb-6">Qu&apos;est-ce que la location aller simple ?</h2>
           <p className="text-gray-700 mb-6">
@@ -113,7 +113,7 @@ export default function OneWayPage() {
           </div>
         </section>
       </main>
-      <Footer />
+      <Footer locale="fr" />
       <a href="https://wa.me/212661371670" target="_blank" rel="noopener noreferrer" className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition text-2xl">
         <i className="fa-brands fa-whatsapp" />
       </a>

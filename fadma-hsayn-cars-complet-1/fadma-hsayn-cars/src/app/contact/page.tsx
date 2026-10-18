@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: "Contact - Location voiture Maroc",
     description: "Contactez Fadma Hsayn Cars par WhatsApp au +212 6 61 37 16 70. Marrakech, Merzouga, Errachidia.",
     url: "https://fadmahsayncars.com/contact",
-    images: ["/images/logo.png"],
+    images: ["/images/logo-fadma-hsayn-cars.webp"],
   },
   twitter: {
     card: "summary_large_image",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
-      <Navbar />
+      <Navbar locale="fr" />
       <main className="mt-[70px]">
         <section className="bg-gradient-to-r from-[var(--blue)] to-[#0d1a3a] text-white py-16 px-4 md:px-10">
           <div className="max-w-4xl mx-auto">
@@ -88,7 +88,7 @@ export default function ContactPage() {
           </div>
         </section>
       </main>
-      <Footer />
+      <Footer locale="fr" />
       <a href="https://wa.me/212661371670" target="_blank" rel="noopener noreferrer" className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-lg text-2xl">
         <i className="fa-brands fa-whatsapp" />
       </a>
