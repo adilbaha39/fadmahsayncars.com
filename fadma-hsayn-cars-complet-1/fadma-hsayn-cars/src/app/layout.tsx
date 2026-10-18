@@ -11,6 +11,10 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://fadmahsayncars.com"),
+  icons: {
+    icon: "/icon.png",
+    apple: "/apple-icon.png",
+  },
   title: {
     default: "Location Voiture Maroc | Marrakech, Merzouga & Errachidia",
     template: "%s | Fadma Hsayn Cars",
