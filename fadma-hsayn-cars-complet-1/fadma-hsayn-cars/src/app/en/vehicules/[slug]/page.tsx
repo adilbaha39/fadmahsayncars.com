@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!car) return {};
   const t = getDict(locale);
   const desc = getCarDescription(slug, locale) || car.description;
-  const prefix = locale === "fr" ? "Location" : locale === "en" ? "Rent" : locale === "ar" ? "كراء" : "Alquiler";
+  const prefix = "Rent";
   return pageMetadata({
     locale,
     path: `/vehicules/${slug}`,

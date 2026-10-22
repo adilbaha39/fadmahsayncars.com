@@ -152,7 +152,7 @@ export default function VehiclePage({ locale, car }: { locale: Locale; car: Car 
             <Breadcrumb
               items={[
                 { name: t.nav.home, url: `${base}${locale === "fr" ? "/" : `/${locale}`}` },
-                { name: t.nav.home === "Accueil" || locale === "fr" ? "Véhicules" : locale === "en" ? "Vehicles" : locale === "ar" ? "السيارات" : "Vehículos", url: `${base}${locale === "fr" ? "/" : `/${locale}`}#fleet` },
+                { name: ({ fr: "Véhicules", en: "Vehicles", ar: "السيارات", es: "Vehículos" } as const)[locale], url: `${base}${locale === "fr" ? "/" : `/${locale}`}#fleet` },
                 { name: car.fullName, url: `${base}${path}` },
               ]}
             />
