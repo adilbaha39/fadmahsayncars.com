@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Script from "next/script";
+import WhatsAppTracker from "@/components/WhatsAppTracker";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 
@@ -160,7 +162,22 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="font-sans antialiased bg-white text-gray-900">{children}</body>
+      <body className="font-sans antialiased bg-white text-gray-900">
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-258Q90BCT2"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-258Q90BCT2');
+          `}
+        </Script>
+        <WhatsAppTracker />
+        {children}
+      </body>
     </html>
   );
 }

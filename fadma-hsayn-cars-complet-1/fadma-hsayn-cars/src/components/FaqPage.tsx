@@ -7,9 +7,25 @@ import type { Locale } from "@/lib/i18n";
 export default function FaqPage({ locale }: { locale: Locale }) {
   const t = getDict(locale);
   const items = faqByLocale[locale];
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map((item) => ({
+      "@type": "Question",
+      name: item.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.a,
+      },
+    })),
+  };
   return (
     <>
       <Navbar locale={locale} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <main className="mt-[70px]">
         <section className="bg-gradient-to-r from-[var(--blue)] to-[#0d1a3a] text-white py-16 px-4 md:px-10">
           <div className="max-w-3xl mx-auto">
