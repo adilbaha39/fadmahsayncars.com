@@ -6,12 +6,12 @@ import { getDict } from "@/data/i18n-dict";
 const locale = "en" as const;
 
 export const metadata: Metadata = pageMetadata({
-  locale,
-  path: "/location-voiture-merzouga",
-  title: getDict(locale).cities.merzougaTitle,
-  description: getDict(locale).cities.merzougaDesc,
+ locale,
+ path: "/location-voiture-merzouga",
+ title: getDict(locale).cities.merzougaTitle,
+ description: getDict(locale).cities.merzougaDesc,
 });
 
 export default function Page() {
-  return <CityPage locale={locale} city="merzouga" />;
+ return <CityPage locale={locale} city="merzouga" />;
 }

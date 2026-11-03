@@ -6,12 +6,12 @@ import { getDict } from "@/data/i18n-dict";
 const locale = "ar" as const;
 
 export const metadata: Metadata = pageMetadata({
-  locale,
-  path: "/conditions",
-  title: getDict(locale).conditions.title,
-  description: getDict(locale).conditions.description,
+ locale,
+ path: "/conditions",
+ title: getDict(locale).conditions.title,
+ description: getDict(locale).conditions.description,
 });
 
 export default function Page() {
-  return <ConditionsPage locale={locale} />;
+ return <ConditionsPage locale={locale} />;
 }

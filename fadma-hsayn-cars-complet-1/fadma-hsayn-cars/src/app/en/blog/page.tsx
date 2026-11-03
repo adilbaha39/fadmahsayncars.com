@@ -6,12 +6,12 @@ import { getDict } from "@/data/i18n-dict";
 const locale = "en" as const;
 
 export const metadata: Metadata = pageMetadata({
-  locale,
-  path: "/blog",
-  title: getDict(locale).blog.title,
-  description: getDict(locale).blog.description,
+ locale,
+ path: "/blog",
+ title: getDict(locale).blog.title,
+ description: getDict(locale).blog.description,
 });
 
 export default function Page() {
-  return <BlogIndexPage locale={locale} />;
+ return <BlogIndexPage locale={locale} />;
 }

@@ -11,28 +11,28 @@ const locale = "ar" as const;
 type Props = { params: Promise<{ slug: string }> };
 
 export function generateStaticParams() {
-  return cars.map((car) => ({ slug: car.slug }));
+ return cars.map((car) => ({ slug: car.slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = await params;
-  const car = getCarBySlug(slug);
-  if (!car) return {};
-  const t = getDict(locale);
-  const desc = getCarDescription(slug, locale) || car.description;
-  const prefix = "كراء";
-  return pageMetadata({
-    locale,
-    path: `/vehicules/${slug}`,
-    title: `${prefix} ${car.fullName} | ${t.common.from} ${car.price} MAD${t.common.day}`,
-    description: desc,
-    image: `/images/${car.image}`,
-  });
+ const { slug } = await params;
+ const car = getCarBySlug(slug);
+ if (!car) return {};
+ const t = getDict(locale);
+ const desc = getCarDescription(slug, locale) || car.description;
+ const prefix = "كراء";
+ return pageMetadata({
+ locale,
+ path: `/vehicules/${slug}`,
+ title: `${prefix} ${car.fullName} | ${t.common.from} ${car.price} MAD${t.common.day}`,
+ description: desc,
+ image: `/images/${car.image}`,
+ });
 }
 
 export default async function Page({ params }: Props) {
-  const { slug } = await params;
-  const car = getCarBySlug(slug);
-  if (!car) notFound();
-  return <VehiclePage locale={locale} car={car} />;
+ const { slug } = await params;
+ const car = getCarBySlug(slug);
+ if (!car) notFound();
+ return <VehiclePage locale={locale} car={car} />;
 }
